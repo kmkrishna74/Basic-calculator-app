@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#BF4444"
+    android:foregroundTint="#050303"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:background="#040303"
+        android:text="CALCULATOR"
+        android:textAlignment="center"
+        android:textColor="#FFE500"
+        android:textColorHighlight="#FFFFFF"
+        android:textDirection="firstStrong"
+        android:textSize="34sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/innerframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFD400"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <EditText
+            android:id="@+id/firstnumber"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Enter First Number"
+            android:inputType="number"
+            android:textColor="#FFE500"
+            android:textColorHighlight="#FFBF00"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107" />
+
+        <EditText
+            android:id="@+id/secondnumber"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Enter Second Number"
+            android:inputType="number"
+            android:textColor="#FFE500"
+            android:textColorHighlight="#FFBF00"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="#100606"
+            android:text="Result"
+            android:textColor="#FFC107"
+            android:textColorHighlight="#FFC107"
+            android:textColorHint="#FFC107"
+            android:textColorLink="#FFC107"
+            android:textSize="34sp" />
+
+        <LinearLayout
+            android:id="@+id/operands"
+            android:layout_width="match_parent"
+            android:layout_height="299dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:textAlignment="center"
+            android:textDirection="firstStrong"
+            android:theme="@style/Theme.BASICCALCULATORAPP">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ADDITION(+)" />
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="SUBTRSCTION(-)" />
+
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="MULTIPLICATION(*)" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="DIVISION(/)" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFB07"
+            android:text="THANK YOU"
+            android:textAlignment="center"
+            android:textColor="#020101"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+</LinearLayout>
